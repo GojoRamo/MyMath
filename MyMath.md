@@ -10,13 +10,13 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 
 $$\begin{array}{l}\sum_{n=0}^{\infty }\frac{f^{n}(a)}{n!}(x-a)^{n}\end{array}$$
 
-$f$ ==$Base^{Exponent}$==: is the function $a^{Exponent}$
+$f$ ($Base^{Exponent}$): is the function $a^{Exponent}$
 
-$a$ ==Base==: The clossest perfect number to $x$ rased to the exponents power 
+$a$ (Base): The clossest perfect number to $x$ rased to the exponents power 
 
-$n$ ==accuracy==: Greater the number the more accurate the result (If output is NaN, decrease accuracy)
+$n$ (accuracy): Greater the number the more accurate the result (If output is NaN, decrease accuracy)
 
-$x$ ==x==: The number we are trying to estamate using the function above ($f$) 
+$x$ (x): The number we are trying to estamate using the function above ($f$) 
 
 As Used in MyMath.java $_{\text{(Using Leibniz's Notation)}}$
 
