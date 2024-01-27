@@ -7,7 +7,9 @@ $$y =\begin{cases}& 2/n\text{, if } n\text{ mod }2 = 0\\  & 3n+1\text{, if } n \
 $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 
 ### Taylor Series:
+
 $$\begin{array}{l}\sum_{n=0}^{\infty }\frac{f^{n}(a)}{n!}(x-a)^{n}\end{array}$$
+
 $f$ ==$Base^{Exponent}$==: is the function $a^{Exponent}$
 
 $a$ ==Base==: The clossest perfect number to $x$ rased to the exponents power 
