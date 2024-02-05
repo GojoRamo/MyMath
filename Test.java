@@ -29,7 +29,9 @@ public class Test {
         System.out.println();
 
         System.out.println("Taylor Series"); 
-        MyMath.TaylorSeries(8, 9, 20, 0.3333333333);
+        MyMath.TaylorSeries(8, 9, 25, 0.3333333333);
+        System.out.println();
+        MyMath.TaylorSeries(8, 7.999999, 25, 0.3333333333);
         System.out.println();
     }
 }

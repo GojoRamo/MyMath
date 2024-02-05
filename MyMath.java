@@ -184,7 +184,8 @@ public class MyMath {
         }
         System.out.println("Derived Value: " + fPRIMEa);
         System.out.println("Actual Value: " + Math.pow(x, Exponent));
-        System.out.println("% Erroe: " + (Math.abs(fPRIMEa-(Math.pow(x, Exponent)))/Math.pow(x, Exponent))*100);
+        BigDecimal Error = BigDecimal.valueOf((Math.abs(fPRIMEa-(Math.pow(x, Exponent)))/Math.pow(x, Exponent))*100);
+        System.out.println("% Erroe: " + Error);
     }
 }
 
