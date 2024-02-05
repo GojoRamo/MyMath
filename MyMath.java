@@ -3,15 +3,14 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class MyMath {
-    public static void main (String[] args){
-    }
+
 /* 
 * Collatz Conjecture: Given any positive intiger, the end result will be 1 (No mathematical Proof)
 * Input:
 *    - num: Any positive intiger
 * Output:
-*    - Amount of calculations done to reach the end reasult 
 *    - List of numbers calculated to reach the end reasult (Size same as above)
+*    - Amount of calculations done to reach the end reasult 
 */
     static void CollatzConjecture(double num){  
         int count = 1;
@@ -38,9 +37,9 @@ public class MyMath {
     }
 
 /* 
- * Quadratic Formula: Used to solve for the x-values of a quadratic equation (LaTeX: "x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}")
+ * Quadratic Formula: Used to solve for the x-values of a quadratic equation 
  * Input: 
- *    - a: Quadratic coefficient (a ≠ 0)
+ *    - a: Quadratic coefficient
  *    - b: Linear coefficient
  *    - c: Constant coefficient
  * Output: 
@@ -48,7 +47,7 @@ public class MyMath {
  */
 
     public static void QuadraticFormula(double a, double b, double c){
-        double TestComplexNum =  (Math.pow(b, 2)-(4 * a * c));
+        double TestComplexNum =  ((Math.pow(b, 2))-(4 * a * c));
         if (a == 0){
             System.out.println("The equation is linear");
         }
@@ -56,12 +55,12 @@ public class MyMath {
             System.out.println("No Real Solution");
         }
         else if (TestComplexNum == 0){
-            double QuadraticFormulaAns = (b + (Math.sqrt(TestComplexNum))) / 2 * a ;
+            double QuadraticFormulaAns = ((-b) + (Math.sqrt(TestComplexNum))) / (2 * a) ;
             System.out.println(QuadraticFormulaAns);
         }
         else {
-            double QuadraticFormulaAns1 = (b - (Math.sqrt(TestComplexNum))) / 2 * a ;
-            double QuadraticFormulaAns2 = (b + (Math.sqrt(TestComplexNum))) / 2 * a ;
+            double QuadraticFormulaAns1 = (((-b) - (Math.sqrt(TestComplexNum))) / (2 * a)) ;
+            double QuadraticFormulaAns2 = (((-b) + (Math.sqrt(TestComplexNum))) / (2 * a)) ;
             System.out.println(QuadraticFormulaAns1);
             System.out.println(QuadraticFormulaAns2);
         }
@@ -101,7 +100,7 @@ public class MyMath {
  * Input: 
  *    n: The n'th number
  * Output: 
- *    A lost of fibonacci number
+ *    A list of fibonacci number
  */
 
     public static void FibonacciSeries (int n){
@@ -121,7 +120,7 @@ public class MyMath {
  * I used this to see how BigDecimal works, and ended up finding a patern when dividing 1 by powers of 2
  */
 
-    public static void Infinit(int num){
+    public static void OneDividedByPowersOfTwo(int num){
         //BigDecimal sum = new BigDecimal(0);
         for (int i = 0 ; num > i ; i++){
             BigDecimal sum = BigDecimal.valueOf(1/(Math.pow(2, i))) ; //If you want to add the numbers rename sum to "fun" and remove "//" from comments 
@@ -167,8 +166,12 @@ public class MyMath {
 
 /*
  * Uses the Taylor Series to find an estamate of a function in the form of x^n
- * Input/Output:
+ * Input:
  *      Refer to MyMath.md
+ * Output:
+ *      Derived Value: Value calculated using Taylor Series 
+ *      Actual Value: The real value derived using Math class
+ *      % Error: The error between the derived value and actual value 
  */
     public static void TaylorSeries (double Base, double x, int accuracy ,double Exponent){
         int count = 1;
@@ -179,7 +182,9 @@ public class MyMath {
             count2 = count2 + 1;
             count = count * count2;
         }
-        System.out.println(fPRIMEa);
+        System.out.println("Derived Value: " + fPRIMEa);
+        System.out.println("Actual Value: " + Math.pow(x, Exponent));
+        System.out.println("% Erroe: " + (Math.abs(fPRIMEa-(Math.pow(x, Exponent)))/Math.pow(x, Exponent))*100);
     }
 }
 

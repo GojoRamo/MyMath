@@ -21,4 +21,3 @@ $x$ (x): The number we are trying to estamate using the function above ($f$)
 As Used in MyMath.java $_{\text{(Using Leibniz's Notation)}}$
 
 $$\begin{array}{l}\sum_{{accuracy}=0}^{accuracy }\frac{\frac{{d}^{accuracy}}{dx^{accuracy}}Base^{{Exponent}}}{accuracy!}(x-Base)^{accuracy}\end{array}$$
-##### Example:
